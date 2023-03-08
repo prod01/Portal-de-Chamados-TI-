@@ -36,8 +36,8 @@ function afterStateEntry(sequenceId){
 			var dataset = DatasetFactory.getDataset("processTask", null, constraints, null);
 			log.info("dataset : " + dataset)
 			
-			log.info("dataset colunas : " + dataset.getColumnCount())
-			for (var j = 0; j < dataset.getColumnCount(); j++) {
+			log.info("dataset colunas : " + dataset.columns)
+			for (var j = 0; j < dataset.columns; j++) {
 			 
 				log.info("******** COLUMN ---->" + dataset.getColumnName(j));
 			  
